@@ -1,0 +1,108 @@
+{
+    "Universe1": {
+      "TeamName": "The Vanguard",
+      "Members": [
+        {
+          "Name": "Captain Solar",
+          "Superpower": "Solar energy manipulation > can absorb, store, and release solar energy for various uses including flight, energy blasts, and enhanced strength.",
+          "Role": "Team Leader, Strategist",
+          "Background": "A former astronaut who gained his powers during a mission when his spacecraft was hit by a solar flare."
+        },
+        {
+          "Name": "AquaMancer",
+          "Superpower": "Water control > can manipulate water in all its forms, create water constructs, and breathe underwater.",
+          "Role": "Environmental Specialist, Diplomat",
+          "Background": "An oceanographer who discovered an ancient artifact granting him the ability to control water."
+        },
+        {
+          "Name": "ShadowHawk",
+          "Superpower": "Shadow manipulation > can blend into shadows, create shadow constructs, and teleport short distances through shadows.",
+          "Role": "Stealth Operative, Reconnaissance",
+          "Background": "A former special forces operative who was transformed during a covert mission gone wrong."
+        },
+        {
+          "Name": "Terra Titan",
+          "Superpower": "Earth manipulation > can control earth and stone, create seismic shockwaves, and has superhuman strength.",
+          "Role": "Heavy Hitter, Defensive Specialist",
+          "Background": "An archaeologist who unearthed an ancient relic that bonded with him, granting him control over the earth."
+        },
+        {
+          "Name": "Vortex",
+          "Superpower": "Wind and air manipulation > can generate powerful winds, fly, and create tornadoes and air shields.",
+          "Role": "Aerial Support, Rapid Response",
+          "Background": "A meteorologist who was caught in a freak storm and gained the ability to control the wind."
+        }
+      ]
+    },
+    "Universe2": {
+      "TeamName": "The Elementals",
+      "Members": [
+        {
+          "Name": "PyroPhantom",
+          "Superpower": "Fire control > can generate and control fire, create fire constructs, and is immune to heat and flames.",
+          "Role": "Combat Specialist, Tactical Assault",
+          "Background": "A firefighter who gained fire-controlling abilities after a mysterious explosion at a chemical plant."
+        },
+        {
+          "Name": "CryoMist",
+          "Superpower": "Ice and cold manipulation > can generate and control ice, create ice constructs, and lower temperatures.",
+          "Role": "Defensive Specialist, Crowd Control",
+          "Background": "A scientist working in cryogenics who accidentally infused herself with experimental cryo-serum."
+        },
+        {
+          "Name": "ElectroSurge",
+          "Superpower": "Electricity control > can generate and manipulate electricity, create electrical constructs, and move at lightning speed.",
+          "Role": "Speedster, Tech Specialist",
+          "Background": "An electrical engineer struck by lightning while working on a high-voltage power line, gaining electrical powers."
+        },
+        {
+          "Name": "GeoGuard",
+          "Superpower": "Geomagnetic manipulation > can control magnetic fields and metals, create magnetic constructs, and has enhanced durability.",
+          "Role": "Tank, Defensive Strategist",
+          "Background": "A geophysicist who discovered a rare mineral granting him the power to control magnetic fields."
+        },
+        {
+          "Name": "PsyWave",
+          "Superpower": "Psychic abilities > telepathy, telekinesis, and mind control.",
+          "Role": "Mentalist, Information Specialist",
+          "Background": "A psychologist who developed psychic abilities after a near-death experience during a lab experiment."
+        }
+      ]
+    },
+    "NormalHumans": {
+      "TeamName": "The Everyday Heroes",
+      "Members": [
+        {
+          "Name": "Doctor Heal",
+          "Superpower": "Advanced medical knowledge > can diagnose and heal injuries and illnesses at an accelerated rate.",
+          "Role": "Medic, Healer",
+          "Background": "A brilliant doctor who discovered a way to use his extensive medical knowledge to rapidly heal others."
+        },
+        {
+          "Name": "TechWiz",
+          "Superpower": "Technological manipulation > can interface with and control any electronic device with his mind.",
+          "Role": "Tech Specialist, Hacker",
+          "Background": "A computer engineer who gained the ability to mentally interface with technology after a lab accident."
+        },
+        {
+          "Name": "Professor Mind",
+          "Superpower": "Superintelligence > has an incredibly high IQ and can solve complex problems in seconds.",
+          "Role": "Strategist, Scientist",
+          "Background": "A university professor whose experiments on brain enhancement resulted in unparalleled intelligence."
+        },
+        {
+          "Name": "Detective Keen",
+          "Superpower": "Enhanced senses > has heightened senses of sight, smell, hearing, and touch, making her an exceptional detective.",
+          "Role": "Investigator, Tracker",
+          "Background": "A seasoned detective who developed super senses after a mysterious encounter during an investigation."
+        },
+        {
+          "Name": "Athlete Ace",
+          "Superpower": "Peak physical condition > possesses superhuman strength, speed, agility, and endurance.",
+          "Role": "Combat Specialist, Trainer",
+          "Background": "A world-class athlete who achieved peak physical condition through intense training and a secret experimental program."
+        }
+      ]
+    }
+  }
+  
