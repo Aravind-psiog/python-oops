@@ -68,41 +68,6 @@
           "Background": "A psychologist who developed psychic abilities after a near-death experience during a lab experiment."
         }
       ]
-    },
-    "NormalHumans": {
-      "TeamName": "The Everyday Heroes",
-      "Members": [
-        {
-          "Name": "Doctor Heal",
-          "Superpower": "Advanced medical knowledge > can diagnose and heal injuries and illnesses at an accelerated rate.",
-          "Role": "Medic, Healer",
-          "Background": "A brilliant doctor who discovered a way to use his extensive medical knowledge to rapidly heal others."
-        },
-        {
-          "Name": "TechWiz",
-          "Superpower": "Technological manipulation > can interface with and control any electronic device with his mind.",
-          "Role": "Tech Specialist, Hacker",
-          "Background": "A computer engineer who gained the ability to mentally interface with technology after a lab accident."
-        },
-        {
-          "Name": "Professor Mind",
-          "Superpower": "Superintelligence > has an incredibly high IQ and can solve complex problems in seconds.",
-          "Role": "Strategist, Scientist",
-          "Background": "A university professor whose experiments on brain enhancement resulted in unparalleled intelligence."
-        },
-        {
-          "Name": "Detective Keen",
-          "Superpower": "Enhanced senses > has heightened senses of sight, smell, hearing, and touch, making her an exceptional detective.",
-          "Role": "Investigator, Tracker",
-          "Background": "A seasoned detective who developed super senses after a mysterious encounter during an investigation."
-        },
-        {
-          "Name": "Athlete Ace",
-          "Superpower": "Peak physical condition > possesses superhuman strength, speed, agility, and endurance.",
-          "Role": "Combat Specialist, Trainer",
-          "Background": "A world-class athlete who achieved peak physical condition through intense training and a secret experimental program."
-        }
-      ]
     }
   }
   

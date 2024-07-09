@@ -23,7 +23,7 @@ class Dog(Animal):
 
     def speak(self):
         print("I bark")
-        # Dog.__walk(self)
+        Dog.__walk(self)
 
 
 class Cat(Animal):
@@ -33,14 +33,14 @@ class Cat(Animal):
         Dog._walk(self)
 
 
-# dog = Dog("Jimmy", 2)
-# dog.speak()
+dog = Dog("Jimmy", 2)
+dog.speak()
 # dog.name_name()
-cat = Cat("Julie", 2)
-cat.speak()
+# cat = Cat("Julie", 2)
+# cat.speak()
 # cat.name_name()
 # cat.__walk()
 # dog.__walk()
 
-a = Animal("manju", 34)
-a.name_name()
+# a = Animal("manju", 34)
+# a.name_name()
