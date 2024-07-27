@@ -37,12 +37,6 @@
                 "Superpower": "Fire manipulation and flight",
                 "Role": "Combat Specialist",
                 "Background": "A firefighter who gained his powers during a volcanic eruption."
-            },
-            {
-                "Name": "NeuroNet",
-                "Superpower": "Technopathy > can control and communicate with electronic devices, hack systems, and manipulate digital information.",
-                "Role": "Tech Specialist, Intelligence Operative",
-                "Background": "A former cyber security expert who gained the ability to interface with technology directly after an experimental brain-computer interface went wrong."
             }
         ]
     },
@@ -84,12 +78,6 @@
                 "Superpower": "Light manipulation > can generate and control light, create holograms, and become invisible by bending light.",
                 "Role": "Stealth Operative, Scout",
                 "Background": "A physicist who gained the ability to manipulate light after an experiment with a particle accelerator went wrong."
-            },
-            {
-                "Name": "IronClad",
-                "Superpower": "Metal manipulation > can control and reshape metal, create metal constructs, and has impenetrable metal skin.",
-                "Role": "Tank, Structural Specialist",
-                "Background": "A welder who gained his powers after a mysterious industrial accident involving experimental nanotechnology."
             }
         ]
     }
