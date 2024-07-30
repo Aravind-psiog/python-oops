@@ -1,15 +1,48 @@
+'''
+Explaining OOP concept in a easy way.
+Points to remember:
+_name(single underscore) represents Protected class
+__name(double underscore) represents Private class
+We will see when and how to use these.
+
+Consider a storyline set in a universe where humans have developed
+a serum that grants superpowers to individuals with specific DNA
+disorders. One day, these superheroes decide to establish a headquarters
+where they can monitor all crimes and stop them effectively.
+
+So here, let us consider a hierarchy Humans > Supes > Headquaters i.e, Humans
+being at top of the hierarchy
+'''
 import json
 
+'''
+Variables which are used repeatedly across the program
+Best practice to do while using variables
+'''
 classHeroes = "Heroes"
 classHumans = "Humans"
 classNormalHumans = "NormalHumans"
 
 
 class Humans:
+    '''
+    Since Humans are at top level who createdf the serum. They are
+    the masters making this class as Base or Master class
+
+
+    Below are the Class attributes with _ before the variable
+    '''
+
     _humans = "NormalHumans"
     _members = "Members"
 
     def __init__(self) -> None:
+        '''
+        Init function always executes whenever you create an instance of a class.
+        Here whenever you create an instance of class Humans, __init__executes.
+        So all the dependencies of a class can be written here. For ex: configurations,
+        loading of files, database connections etc.,
+        '''
         self.location = "humans.json"
         self.file = open(self.location)
         self.load = json.load(self.file)
@@ -27,9 +60,12 @@ class Heroes(Humans):
     However, their names are different and also their superpower(methods). In general it is a function
     which takes args and qwargs to perform action based on their properties.
 
-    This is the Base class
-            or
-    Master class
+    inheritance - this class Heroes inherit from master class Humans
+                        or
+    Heroes class is derived from Humans class.
+                        or
+    Heroes is subclass of Humans
+
     '''
     _members = "Members"  # class attribute
     _universe1 = "Universe1"
@@ -39,6 +75,7 @@ class Heroes(Humans):
     def intro():
         '''
         A static method, does nothing. Used to structure a class
+        You can put things that are static.
         '''
         text = ''' ____                        _                              
 / ___| _   _ _ __   ___ _ __| |__   ___ _ __ ___   ___  ___ 
@@ -62,7 +99,7 @@ class Heroes(Humans):
         with open(self.location, 'w') as file:
             json.dump(data, file, indent=4)
 
-    def addMemberToList(self, new_member, universe):
+    def validateMember(self, new_member, universe):
         data = self.readFile()
         vanguard = data[universe][Heroes._members]
         for name in vanguard:
@@ -75,7 +112,7 @@ class Heroes(Humans):
 
 class Supes(Heroes):
     '''
-    inheritance - this class Supes inherit from master class Heroes
+    inheritance - this class Supes inherit from class Heroes
                         or
     Supes class is derived from Heroes class.
                         or
@@ -85,6 +122,9 @@ class Supes(Heroes):
     def __init__(self) -> None:
         super().__init__()
         self.humans = NormalHumans()
+
+    def whois(self):
+        print("we are Supes")
 
     def __theVanguard(self):
         print(self.__class__.__name__)
@@ -108,6 +148,9 @@ class Supes(Heroes):
 
 
 class NormalHumans(Humans):
+    def whois(self):
+        print("we are Humans")
+
     def theEverydayHeroes(self):
         return Humans.readFile(self)
 
@@ -115,7 +158,18 @@ class NormalHumans(Humans):
         return Supes._membersOfTheElementals(self)
 
 
+def introduce(who):
+    return who.whois()
+
+
 class HeadQuaters(Supes, NormalHumans):
+    '''
+    Headquarters is a place where everything is monitored.
+    It can access both Supes and Humans.
+    Therefore, it inherits from more than one class.
+    Specifically, Headquarters inherits from both Supes and NormalHumans,
+    which is an example of multiple inheritance.'''
+
     @staticmethod
     def intro():
         print("Accessing data from headquaters...")
@@ -150,21 +204,25 @@ class HeadQuaters(Supes, NormalHumans):
                 print(f'Role: {members.get("Role")}')
 
 
+read = Supes()
+introduce(read)
 read = NormalHumans()
-# tv = read.theEverydayHeroes()
-# read = HeadQuaters()
-# tv = read.imHead()
-# print(tv)
-heroes = HeadQuaters()
-# new_member = {
-#     "Name": "NeuroNet",
-#     "Superpower": "Technopathy > can control and communicate with electronic devices, hack systems, and manipulate digital information.",
-#     "Role": "Tech Specialist, Intelligence Operative",
-#     "Background": "A former cyber security expert who gained the ability to interface with technology directly after an experimental brain-computer interface went wrong."
-# }
+introduce(read)
+tv = read.theEverydayHeroes()
+read = HeadQuaters()
+tv = read.imHead()
+print(tv)
+heroes = Heroes()
+print(heroes.intro())
+new_member = {
+    "Name": "NeuroNet",
+    "Superpower": "Technopathy > can control and communicate with electronic devices, hack systems, and manipulate digital information.",
+    "Role": "Tech Specialist, Intelligence Operative",
+    "Background": "A former cyber security expert who gained the ability to interface with technology directly after an experimental brain-computer interface went wrong."
+}
 
-# add = heroes.addMemberToList(new_member, "Universe1")
-# print(add)
-# print(heroes.universe())
-# uni = heroes.getMembers("NormalHumans")
+add = heroes.validateMember(new_member, "Universe1")
+print(add)
+print(heroes.universe())
+uni = heroes.getMembers("NormalHumans")
 hum = heroes.getSupes()
